@@ -1,6 +1,5 @@
 # Jedi **English**
-# 📝 Todo App
-This project is a simple **Todo List** application.
+# 📝 Project app
 
 ## 🚀 How to Run it?
 
@@ -9,7 +8,7 @@ If you have Git installed, you can clone the project by running the following co
 
 ```sh
 git clone https://github.com/YunusBeytut/Jedi.git
-cd Jedi/todo
+cd Jedi/project
 You can then open the index.html file in the browser by double clicking on it.
 ````
 
@@ -19,17 +18,16 @@ Download ZIP” button and download the file to your computer.
 ```
 
 ##Extract the ZIP File:
-```Extract the downloaded ZIP file and go to the Jedi-main/todo folder.``
+```Extract the downloaded ZIP file and go to the Jedi-main/project folder.```
 
 #### Open Project:
-Double click on the ``index.html file to open it in the browser.
+```Double click on the ``index.html file to open it in the browser.```
 
-Translated with DeepL.com (free version)
+
 
 
 # Jedi **Türkçe**
-# 📝 Todo Uygulaması
-Bu proje, basit bir **Todo Listesi** uygulamasıdır.
+# 📝 Proje uygulaması
 
 ## 🚀 Nasıl Çalıştırılır?
 
@@ -38,7 +36,7 @@ Eğer Git yüklü ise terminal veya komut satırında aşağıdaki komutları ç
 
 ```sh
 git clone https://github.com/YunusBeytut/Jedi.git
-cd Jedi/todo
+cd Jedi/proje
 Daha sonra index.html dosyasını çift tıklayarak tarayıcıda açabilirsiniz.
 ````
 
@@ -48,7 +46,7 @@ Download ZIP" butonuna tıklayın ve dosyayı bilgisayarınıza indirin.
 ```
 
 ##ZIP Dosyasını Çıkartın:
-```İndirilen ZIP dosyasını çıkartın ve Jedi-main/todo klasörüne gidin.```
+```İndirilen ZIP dosyasını çıkartın ve Jedi-main/proje klasörüne gidin.```
 
 ### Projeyi Açın:
 ```index.html dosyasına çift tıklayarak tarayıcıda açabilirsiniz.```
