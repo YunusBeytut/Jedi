@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: linear-gradient(to right, #6a00f4, #ff00ff);
+    min-height: 100vh;
+    /* Sayfanın en az viewport yüksekliğinde olmasını sağla */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* İmza için referans alınacak */
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 1.5rem 0;
+    font-size: 4rem;
+    /* Boyut biraz büyütüldü */
+    letter-spacing: -2px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    text-align: center;
+}
+
+header h1:hover {
+    font-variation-settings: "wght" 582;
+    letter-spacing: 1px;
+}
+
+/* Başlık Konumlandırma */
+#title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    /* Ekranın tamamını kaplamaması için */
+    padding: 2rem;
+}
+
+header,
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    position: relative;
+}
+
+form.search {
+    display: flex;
+}
+
+form button,
+form input {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: #fff;
+    outline: none;
+
+}
+
+form button {
+    margin-left: -4px;
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* Ortak Stiller */
+.todo-input,
+.todo-button {
+    height: 56px;
+    /* Aynı yükseklik */
+    padding: 0 1.5rem;
+    /* Yatay padding eşitliği */
+    font-size: 1.1rem;
+    /* Aynı font boyutu */
+    border-radius: 12px !important;
+    /* Aynı köşe yuvarlaklığı */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Input Özel Stilleri */
+.todo-input {
+    background: rgba(255, 255, 255, 0.2);
+    /* Hafif şeffaf beyaz */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    /* Beyaz kenarlık */
+    color: white;
+    /* Yazı rengi beyaz */
+    border-radius: 12px;
+    /* Köşeleri yuvarlak */
+    padding: 0.8rem 1rem;
+    /* İç boşluk */
+    font-size: 1rem;
+    /* Yazı boyutu */
+    width: 300px;
+    /* Genişlik */
+    flex: 1;
+    /* Input alanını esnek yap */
+}
+
+.todo-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    /* Placeholder rengi */
+}
+
+.todo-button {
+    background: #9D50BB;
+    /* Mor arka plan */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    /* Beyaz kenarlık */
+    color: white;
+    /* İkon rengi beyaz */
+    border-radius: 12px;
+    /* Köşeleri yuvarlak */
+    padding: 0.8rem 1rem;
+    /* İç boşluk */
+    font-size: 1rem;
+    /* İkon boyutu */
+    cursor: pointer;
+    /* Tıklanabilir görünüm */
+    transition: background 0.3s ease;
+    /* Renk geçişi */
+    width: 56px;
+    /* Buton genişliği sabit */
+    height: 56px;
+    /* Buton yüksekliği sabit */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover Efektleri */
+.todo-button:hover {
+    background: #6E48AA;
+    height: 56px;
+    width: 68px;
+    /* Hafif genişleme */
+    margin-left: -6px;
+    /* Input ile arasındaki boşluğu koru */
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .todo-input {
+        width: 65vw;
+        max-width: 280px;
+        padding: 0 1rem;
+    }
+
+    .todo-button {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+.search {
+    display: flex;
+    gap: 5px;
+    /* Input ve buton arasında 8px boşluk bırak */
+    align-items: center;
+    /* Dikeyde ortala */
+}
+
+/* İkon Boyutu */
+.todo-button i {
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+.todo-button:hover i {
+    transform: rotate(90deg);
+}
+
+.select {
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 12px;
+    /* Köşeleri yuvarlak */
+    background: rgba(255, 255, 255, 0.2);
+    /* Hafif şeffaf beyaz */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    /* Beyaz kenarlık */
+    width: 12rem;
+    /* Genişlik */
+}
+
+/* Select Elementi */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+    /* Yazı rengi beyaz */
+    background: rgba(255, 255, 255, 0.2);
+    /* Koyu şeffaf arka plan */
+    font-size: 1rem;
+    /* Yazı boyutu */
+    border-radius: 12px;
+    /* Köşeleri yuvarlak */
+}
+
+/* Seçenekler (option) */
+select option {
+    background: #2A2A2A;
+    /* Koyu arka plan */
+    color: white;
+    /* Yazı rengi beyaz */
+    padding: 0.5rem;
+    /* İç boşluk */
+}
+
+.select:after {
+    content: "\25BC";
+    position: absolute;
+    background-color: #9D50BB;
+    color: #fff;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    background-color: #6E48AA;
+    color: #340436;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    /* Görevler arttıkça büyüsün */
+    padding-bottom: 80px;
+    /* İmza için alt boşluk bırak */
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background-color: #fff;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    transition: .5s all ease;
+}
+
+.todo li {
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+.complete-btn,
+.trash-btn {
+    background-color: #960303;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    background-color: #0b8793;
+}
+
+.fa-check-circle,
+.fa-minus-circle {
+    font-size: 1.5rem;
+    pointer-events: none;
+
+
+}
+
+/*! alert css */
+.alert-wrapper {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+
+}
+
+.alert-success,
+.alert-warning {
+    padding: 1rem;
+    color: #fff;
+    font-weight: bold;
+    width: 25rem;
+    text-align: center;
+    display: none;
+}
+
+.alert-warning {
+    background-color: #dc3545;
+}
+
+.alert-success {
+    background-color: #5ebe92;
+}
+
+.fall {
+    transform: translateY(8rem);
+    opacity: 0;
+}
+
+.completed {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+/* İmza Stili */
+.signature {
+    position: absolute;
+    /* Sayfanın en altına yapışık */
+    bottom: 20px;
+    /* Sayfanın altından 20px yukarıda */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Tam ortalamak için */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: white;
+    /* Yazı rengi beyaz */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    /* Yarı şeffaf siyah arka plan */
+    padding: 0.5rem 1rem;
+    /* İç boşluk */
+    border-radius: 8px;
+    /* Köşeleri yuvarlak */
+    backdrop-filter: blur(5px);
+    /* Cam efekti */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Hafif gölge */
+    width: fit-content;
+    /* İçerik kadar genişlik */
+    z-index: 1;
+    /* Diğer elementlerin üzerinde görünsün */
+}
+
+.signature a {
+    color: #9D50BB;
+    /* Mor renk */
+    text-decoration: none;
+    /* Alt çizgiyi kaldır */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.signature a:hover {
+    color: #6E48AA;
+    /* Hover'da daha koyu mor */
+}
+
+.signature {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
