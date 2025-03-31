@@ -1,26 +1,48 @@
-# Advanced To-Do List 🚀  
-**Modern, interactive task manager with localStorage persistence and sleek UI**
+# To-Do List Uygulaması
 
-🔗 **Live Demo:** [yunusbeytut-to-do.netlify.app](https://yunusbeytut-to-do.netlify.app)  
-![App Screenshot](assets/screenshot.png) 
+![To-Do List Ekran Görüntüsü](./images/example1.png)  
 
-## ✨ Özellikler  
-- ✅ **Görev ekleme/silme** (Animasyonlu geçişlerle)  
-- 🎯 **Tamamlanan görevler** (Üstü çizili + opaklık efekti)  
-- 🔍 **Filtreleme** (Tümü/Tamamlanan/Tamamlanmayan)  
-- 💾 **LocalStorage desteği** (Sayfa yenilense bile veriler kaybolmaz)  
-- 📱 **Tamamen responsive tasarım** (Masaüstü & mobil uyumlu)  
-- 💅 **Şık UI** (Gradient arkaplan, animasyonlu butonlar)  
-- ⚠️ **Bildirim sistemi** (Başarılı/hatalı işlemler için)  
+## 🔍 Genel Bakış
+Bu proje, kullanıcıların günlük görevlerini ekleyip yönetebileceği basit ve etkili bir **To-Do List** uygulamasıdır. Tamamen frontend teknolojileriyle (HTML, CSS, JavaScript) geliştirilmiş olup, veriler tarayıcının `localStorage`'ında saklanır.
 
-## 🛠️ Kullanılan Teknolojiler  
-- **Frontend:** HTML5, CSS3, Vanilla JavaScript  
-- **Animasyonlar:** CSS Transitions/Transforms  
-- **Veri Saklama:** Browser LocalStorage  
-- **İkonlar:** Font Awesome 6  
-- **Font:** Poppins (Google Fonts)  
+## ✨ Özellikler
+- ✅ Yeni görev ekleme
+- ✔️ Görevleri tamamlanmış olarak işaretleme
+- ✏️ Görevleri düzenleme
+- 🗑️ Görevleri silme
+- 🔍 Görevleri filtreleme (Tümü, Tamamlananlar, Tamamlanmayanlar)
+- 🌙 Koyu/Açık tema desteği
+- 📦 Verilerin tarayıcıda kalıcı olarak saklanması (LocalStorage)
 
-## 🚀 Hızlı Başlangıç  
-1. Repoyu klonlayın:  
-   ```bash
-   git clone https://github.com/YunusBeytut/Advanced-To-Do-List.git
+## 🛠️ Kullanılan Teknolojiler
+- **HTML5** - Yapısal temel
+- **CSS3** - Tasarım ve animasyonlar
+- **JavaScript (ES6)** - İşlevsellik
+- **LocalStorage** - Veri kalıcılığı
+
+## 📸 Ekran Görüntüleri
+
+| Görev Ekleme | Görev Düzenleme | Koyu Tema |
+|--------------|-----------------|-----------|
+|| ![Example Task](./images/example2-task.png) | ![Example](./images/example3.png) |
+
+## 🚀 Canlı Demo
+Uygulamayı hemen deneyin: [https://yunusbeytut-to-do.netlify.app](https://yunusbeytut-to-do.netlify.app)
+
+
+## 📜 Nasıl Çalıştırılır?
+1. **Online**: Yukarıdaki "Canlı Demo" bağlantısını kullanın
+2. **Local**:
+   - Bu repo'yu klonlayın
+   - `index.html` dosyasını tarayıcıda açın
+   - Uygulama otomatik olarak çalışacaktır (LocalStorage kullanır)
+
+## 📌 Notlar
+- Tüm veriler tarayıcınızın yerel depolama alanında saklanır, farklı cihazlarda senkronize olmaz
+- Responsive tasarım sayesinde mobil ve tablet cihazlarda da kullanılabilir
+
+---
+
+🛠️ **Geliştirici**: Yunus Beytüt  
+📧 **İletişim**: [yunusbeytut0@gmail.com](yunusbeytut0@gmail.com)  
+📅 **Son Güncelleme**: March 2024
