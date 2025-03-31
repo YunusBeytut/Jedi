@@ -1,5 +1,4 @@
-# To-Do List Uygulaması
-
+# 🚀 Advanced To-Do List with LocalStorage
 ![To-Do List Ekran Görüntüsü](./images/example1.png)  
 
 ## 🔍 Genel Bakış
