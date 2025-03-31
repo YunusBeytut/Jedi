@@ -22,9 +22,9 @@ Bu proje, kullanıcıların günlük görevlerini ekleyip yönetebileceği basit
 
 ## 📸 Ekran Görüntüleri
 
-| Görev Ekleme | Görev Düzenleme | Koyu Tema |
-|--------------|-----------------|-----------|
-|| ![Example Task](./images/example2.png) | ![Example](./images/example3.png) |
+ | Görev Düzenleme | Example |
+|-----------------|-----------|
+| ![Example Task](./images/example2.png) | ![Example](./images/example3.png) |
 
 ## 🚀 Canlı Demo
 Uygulamayı hemen deneyin: [https://yunusbeytut-to-do.netlify.app](https://yunusbeytut-to-do.netlify.app)
