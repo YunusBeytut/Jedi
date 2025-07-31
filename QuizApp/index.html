@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+    <!-- Icons import -->
+    <!-- Font Awesome 6 örneği -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right_alt" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Quiz Config Container -->
+    <div class="config-container">
+        <h2 class="config-title"> Quiz Configuration</h2>
+
+        <div class="config-option">
+            <h4 class="option-title">Select Category</h4>
+            <div class="category-options">
+                <button class="category-option">Programlama</button>
+                <button class="category-option">Coğrafya</button>
+                <button class="category-option">Eğlence</button>
+                <button class="category-option">Tarih</button>
+            </div>
+        </div>
+
+        <div class="config-option">
+            <div class="question-options">
+                <button class="question-option">5</button>
+                <button class="question-option active">10</button>
+                <button class="question-option">15</button>
+                <button class="question-option">20</button>
+                <button class="question-option">25</button>
+            </div>
+        </div>
+        <button class="start-quiz-btn">Start Quiz</button>
+
+    </div>
+    <!-- Quiz Container -->
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h2 class="quiz title">Quiz Application</h2>
+            <div class="quiz-timer">
+                <!-- Doğru örnek -->
+                <i class="fa-solid fa-stopwatch"></i>
+
+                <p class="time-duration">15s</p>
+            </div>
+        </header>
+        <div class="quiz-content">
+            <h1 class="question-text"></h1>
+            <ul class="answer-options">
+            </ul>
+        </div>
+        <div class="quiz-footer">
+
+            <p class="question-status"><b> 2 </b> of <b> 10 </b> Questions</p>
+            <button class="next-question-btn">Next
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+            </button>
+
+        </div>
+    </div>
+    <!-- Yeni Result Container HTML -->
+    <div class="result-container">
+        <div class="result-animation">
+            <div class="trophy-anim">
+                <div class="trophy-cup"></div>
+                <div class="trophy-base"></div>
+                <div class="trophy-star"></div>
+            </div>
+        </div>
+
+        <div class="result-content">
+            <h2 class="result-title">Harika İş Çıkardın!</h2>
+
+            <div class="score-display">
+                <div class="score-circle">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring__circle" stroke="#E0E0E0" stroke-width="8" fill="transparent"
+                            r="52" cx="60" cy="60" />
+                        <circle class="progress-ring__circle progress-ring__circle--animated" stroke="#6C5CE7"
+                            stroke-width="8" fill="transparent" r="52" cx="60" cy="60" stroke-dasharray="326.56"
+                            stroke-dashoffset="326.56" />
+                    </svg>
+                    <span class="score-percent">0%</span>
+                </div>
+
+                <div class="score-details">
+                    <p><i class="fas fa-check-circle"></i> Doğru: <span class="correct-count">5</span></p>
+                    <p><i class="fas fa-times-circle"></i> Yanlış: <span class="wrong-count">5</span></p>
+                    <p><i class="fas fa-trophy"></i> Skor: <span class="total-score">50</span></p>
+                </div>
+            </div>
+
+            <div class="result-message">
+                <p>Bu harika bir başlangıç! Daha fazla pratik yaparak kendini geliştirebilirsin.</p>
+            </div>
+
+            <div class="action-buttons">
+                <button class="try-again-btn">
+                    <i class="fas fa-redo"></i> Tekrar Dene
+                </button>
+                <button class="share-btn">
+                    <i class="fas fa-share-alt"></i> Paylaş
+                </button>
+            </div>
+            <div class="score-history">
+                <h3>Son Skorlarım</h3>
+                <div class="score-cards" id="scoreHistory">
+                    <!-- Dinamik olarak eklenecek örnek yapı: -->
+                    <div class="score-card">
+                        <span class="score-info"> <!-- YENİ EKLENEN KISIM -->
+                            <span class="score-category">Programlama</span>
+                            <span class="score-count">(10 Soru)</span>
+                        </span>
+                        <span class="score-value">80 Puan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="javascript/questions.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
