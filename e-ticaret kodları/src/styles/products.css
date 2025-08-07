@@ -1,0 +1,253 @@
+.products {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.products-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.products-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.products-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.products-divider {
+    width: 6rem;
+    height: 0.25rem;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    margin: 0 auto 2rem;
+}
+
+.products-subtitle {
+    font-size: 1.25rem;
+    color: #4b5563;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.category-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    background-color: #f3f4f6;
+    color: #374151;
+    transition: all 0.3s;
+}
+
+.category-button:hover {
+    background-color: #eff6ff;
+    color: #2563eb;
+}
+
+.category-button.active {
+    background-color: #2563eb;
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    overflow: hidden;
+    border: 1px solid #f3f4f6;
+}
+
+.product-card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.25rem);
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.1);
+}
+
+.product-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.badge-text {
+    background: linear-gradient(90deg, #ef4444, #ec4899);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.product-wishlist {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.product-card:hover .product-wishlist {
+    opacity: 1;
+}
+
+.wishlist-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 9999px;
+    padding: 0.25rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.wishlist-icon:hover {
+    color: #ef4444;
+}
+
+.product-info {
+    padding: 1.5rem;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.rating-stars {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    width: 1rem;
+    height: 1rem;
+}
+
+.star.filled {
+    color: #fbbf24;
+    fill: currentColor;
+}
+
+.star.empty {
+    color: #d1d5db;
+}
+
+.rating-text {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-left: 0.5rem;
+}
+
+.product-pricing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.current-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.original-price {
+    font-size: 1.125rem;
+    color: #6b7280;
+    text-decoration: line-through;
+}
+
+.add-to-cart-button {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    transition: all 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background: linear-gradient(90deg, #1d4ed8, #6d28d9);
+    transform: scale(1.05);
+}
+
+.products-footer {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.view-all-button {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: all 0.3s;
+}
+
+.view-all-button:hover {
+    background: linear-gradient(90deg, #1d4ed8, #6d28d9);
+    transform: scale(1.05);
+}
