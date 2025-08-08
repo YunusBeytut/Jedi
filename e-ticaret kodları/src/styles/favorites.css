@@ -1,0 +1,103 @@
+.favorites-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f3e8ff 60%, #dbeafe 100%);
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.favorites-card {
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 32px -6px rgba(124, 58, 237, 0.12);
+    padding: 2.5rem 2rem;
+    min-width: 340px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.favorites-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.favorites-icon {
+    color: #ef4444;
+    background: #f3e8ff;
+    border-radius: 50%;
+    padding: 0.4rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.favorites-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.favorites-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid #f3f4f6;
+    padding: 1rem 0;
+}
+
+.favorites-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px -2px rgba(236, 72, 153, 0.10);
+}
+
+.favorites-details {
+    flex: 1;
+}
+
+.favorites-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.7rem;
+}
+
+.favorites-to-cart {
+    background: linear-gradient(90deg, #2563eb, #ef4444);
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 4px 16px -4px rgba(236, 72, 153, 0.10);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.favorites-to-cart:hover {
+    background: linear-gradient(90deg, #7c3aed, #ef4444);
+    transform: scale(1.04);
+}
+
+.favorites-remove {
+    background: #f3e8ff;
+    border: none;
+    border-radius: 50%;
+    color: #ef4444;
+    padding: 0.35rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.favorites-remove:hover {
+    background: #fca5a5;
+}
+
+.favorites-empty {
+    padding: 2rem 0;
+    text-align: center;
+    color: #ef4444;
+    font-size: 1.15rem;
+}
