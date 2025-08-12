@@ -1,0 +1,47 @@
+.post-detail {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px #6897ea2d;
+  padding: 2.5rem;
+  margin: 2rem auto;
+  max-width: 650px;
+  animation: fadeInDetail 0.8s;
+  backdrop-filter: blur(7px);
+}
+
+@keyframes fadeInDetail {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-detail h2 {
+  font-size: 2rem;
+  color: #6897ea;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+
+.post-detail button {
+  background: linear-gradient(90deg, #6897ea, #0a2540);
+  border: none;
+  color: #fff;
+  padding: 0.7em 1.3em;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  transition: background 0.22s, transform 0.22s;
+  font-size: 1rem;
+}
+
+.post-detail button:hover {
+  background: linear-gradient(90deg, #0a2540, #6897ea);
+  transform: scale(1.07);
+}
