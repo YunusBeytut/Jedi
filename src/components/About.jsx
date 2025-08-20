@@ -65,7 +65,7 @@ function About() {
         </div>
         <div className="about-quote">
           <blockquote>
-            "Empowering the next generation of creators, one article at a time."
+            "Empowering the next generation of creators, one article at a time.."
           </blockquote>
         </div>
       </div>
