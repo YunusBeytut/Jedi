@@ -8,6 +8,6 @@ function Loader() {
       <span>Yükleniyor...</span>
     </div>
   );
-}
+} 
 
 export default Loader;
