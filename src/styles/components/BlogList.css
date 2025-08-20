@@ -1,0 +1,21 @@
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2.8rem 2.1rem;
+    margin-top: 1.2rem;
+    padding: 0.5rem 0 1.7rem 0;
+    animation: blogListAppear2 1s cubic-bezier(.61, -0.36, .42, 1.36);
+    will-change: contents;
+}
+
+@keyframes blogListAppear2 {
+    0% {
+        opacity: 0;
+        transform: scale(0.99) translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}

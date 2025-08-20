@@ -1,0 +1,217 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    background: linear-gradient(93deg, #7e5fff 0%, #b09cf7 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.6rem;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px #b09cf72a;
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid #e1d8ee;
+    animation: navbarFadeIn 1s cubic-bezier(.5, .09, .47, 1.32);
+}
+
+@keyframes navbarFadeIn {
+    0% {
+        opacity: 0;
+        top: -40px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.navbar-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.navbar-logo {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    box-shadow: 0 4px 18px #b09cf766;
+    object-fit: cover;
+    background: #fff;
+    border: 2px solid #b09cf7;
+    transition: transform 0.19s, box-shadow 0.19s;
+}
+
+.navbar-logo-title:hover .navbar-logo {
+    transform: scale(1.07) rotateZ(-6deg);
+    box-shadow: 0 7px 32px #7e5fff55;
+}
+
+.navbar-title {
+    font-size: 1.45rem;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    color: #fff;
+    text-shadow: 0 2px 10px #7e5fff55;
+    transition: color 0.16s;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    position: relative;
+    font-size: 1.14rem;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0.4rem 0.7rem;
+    border-radius: 8px;
+    transition: background .18s, color .18s;
+    color: #f8f8fc;
+    letter-spacing: 0.3px;
+    overflow: hidden;
+}
+
+.navbar-links li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 17%;
+    bottom: 7px;
+    width: 66%;
+    height: 2.8px;
+    background: linear-gradient(90deg, #fff 0%, #b09cf7 100%);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.28s cubic-bezier(.61, -0.36, .42, 1.36);
+}
+
+.navbar-links li:hover,
+.navbar-links li.active {
+    background: rgba(255, 255, 255, 0.16);
+    color: #fff;
+}
+
+.navbar-links li:hover::after,
+.navbar-links li.active::after {
+    transform: scaleX(1);
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 0.4rem;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.navbar-btn,
+.navbar-btn-signup {
+    background: #fff;
+    color: #5a3bd3;
+    border: none;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    border-radius: 9px;
+    padding: 0.5em 0.9em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #b09cf733;
+    transition: background .19s, color .19s, transform .18s, box-shadow .19s;
+    font-size: 0.98rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    white-space: nowrap;
+    min-width: 0;
+    max-width: 120px;
+    box-sizing: border-box;
+}
+
+.navbar-btn-signup {
+    background: linear-gradient(90deg, #b09cf7 20%, #7e5fff 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px #b09cf74a;
+}
+
+.navbar-btn-signup:hover {
+    background: linear-gradient(90deg, #7e5fff 10%, #b09cf7 100%);
+    color: #fff;
+    transform: scale(1.08);
+    box-shadow: 0 7px 24px #7e5fff55;
+}
+
+.navbar-btn:hover {
+    background: #f7f3ff;
+    color: #7e5fff;
+    transform: scale(1.06);
+}
+
+@media (max-width: 1200px) {
+    .navbar-links {
+        gap: 1.1rem;
+    }
+
+    .navbar {
+        padding: 1rem 0.7rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-links {
+        gap: 0.7rem;
+    }
+
+    .navbar {
+        padding: 0.7rem 0.4rem;
+    }
+
+    .navbar-title {
+        font-size: 1.13rem;
+    }
+
+    .navbar-actions {
+        gap: 0.3rem;
+    }
+
+    .navbar-btn,
+    .navbar-btn-signup {
+        font-size: 0.93rem;
+        padding: 0.38em 0.7em;
+        max-width: 95px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-actions {
+        gap: 0.22rem;
+    }
+
+    .navbar-title {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        padding: 0.35rem 0.09rem;
+    }
+
+    .navbar-btn,
+    .navbar-btn-signup {
+        font-size: 0.83rem;
+        padding: 0.30em 0.5em;
+        max-width: 78px;
+    }
+}
