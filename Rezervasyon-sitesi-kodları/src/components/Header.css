@@ -1,0 +1,234 @@
+/* Header Ana Container */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  border-bottom-color: var(--border);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Stilleri */
+.logo {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo h2 {
+  background: linear-gradient(135deg, #164e63, #0891b2, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.logo h2::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #06b6d4, transparent);
+  border-radius: 1px;
+}
+
+.logo h2 .reserve {
+  font-weight: 900;
+}
+
+.logo h2 .now {
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* Navigasyon Stilleri */
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #06b6d4, #0891b2);
+  transition: width 0.3s ease;
+  border-radius: 1px;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Header Aksiyonları */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #164e63, #0891b2);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(6, 182, 212, 0.3);
+}
+
+/* Mobil Menü Toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: linear-gradient(90deg, #164e63, #0891b2);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1rem;
+  }
+
+  .logo h2 {
+    font-size: 1.6rem;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav.nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav a {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .nav a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .btn-primary {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h2 {
+    font-size: 1.4rem;
+  }
+
+  .header-container {
+    padding: 0.8rem 1rem;
+  }
+}
