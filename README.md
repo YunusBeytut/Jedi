@@ -1,40 +1,39 @@
-# 🌌 Jedi – Project Collection
+# 🌌 Jedi
 
-Welcome to **Jedi**, a collection of my frontend development projects.  
-This repository serves as a hub where I share my learning journey, experiments, and complete applications.  
-
----
-
-## 🚀 Projects
-
-| # | Project | Description | Preview |
-|---|---------|-------------|---------|
-| 1 | [Quiz App](./QuizApp) | A responsive quiz application with a clean UI | ![Quiz Screenshot](./assets/quiz.png) |
-| 2 | [ShopMaxs E-Commerce](./ShopMaxs) | A modern e-commerce demo site | ![ShopMaxs Screenshot](./assets/shop.png) |
-| 3 | [Blog Website](./BlogSite) | Personal blog platform with responsive layout | ![Blog Screenshot](./assets/blog.png) |
-| 4 | [Portfolio Website](./Portfolio) | My personal portfolio showcasing skills and projects | ![Portfolio Screenshot](./assets/portfolio.png) |
-
-*(You can add/remove projects here as needed. Each project folder contains its own detailed README.)*  
+Welcome to **Jedi**, my general repository where I collect and share my projects.  
+This space reflects my learning journey, experiments, and progress as a developer.  
 
 ---
 
-## 🛠️ Technologies Used
-- **Frontend:** HTML, CSS, JavaScript  
-- **Frameworks/Libraries:** React (basic), TailwindCSS (optional in some projects)  
-- **Tools:** Git, GitHub, VS Code  
+## 👨‍💻 About Me
+- I am studying **Computer Programming**.  
+- Interested in **frontend development**, automation, and building user-friendly web apps.  
+- Skilled in:
+  - **HTML & CSS** (advanced layout and styling)  
+  - **JavaScript** (intermediate level)  
+  - **React** (beginner, growing with projects)  
+  - **Power Automate Desktop** (process automation)  
+
+I like creating practical projects that turn theory into something real and usable.  
 
 ---
 
-## 📸 Gallery
-
-<p align="center">
-  <img src="./assets/quiz.png" width="200" />
-  <img src="./assets/shop.png" width="200" />
-  <img src="./assets/blog.png" width="200" />
-  <img src="./assets/portfolio.png" width="200" />
-</p>
+## 📂 About This Repository
+- This repository serves as a **general workspace**.  
+- It may contain **different projects, tests, and exercises** I work on.  
+- Each project has its own folder with a **separate README** for setup and usage instructions.  
 
 ---
 
-## 🧭 Project Structure
+## 🛠️ How to Use
+To explore projects inside this repository:
 
+```sh
+# Clone the repository
+git clone https://github.com/YunusBeytut/Jedi.git
+
+# Move into the repository
+cd Jedi
+
+# Go into any project folder
+cd ProjectName
