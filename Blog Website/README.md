@@ -1,26 +1,55 @@
 # 📝 React Blog Website
 
 A **React-based blog website** built to practice and showcase frontend development skills.  
-It provides a simple platform for publishing posts with a clean and responsive layout.
+It includes routing between pages, state management for posts, and a responsive layout for different devices.  
 
 ---
 
 ## 🌐 Live Demo
-[View the demo](https://your-demo-link.com)
+👉 [Click here to view the demo](https://your-demo-link.com)  
 
 ---
 
 ## ✨ Features
-- Responsive layout (mobile-first)
-- Post listing, single post view, categories/tags
-- Client-side search and basic filtering
-- Optional dark mode toggle
-- Pagination or “load more” pattern
-- Error & empty states (no data, network issues)
+- 📱 Responsive design for desktop, tablet, and mobile  
+- 📰 Dynamic blog posts structure  
+- ⚡ Built with React functional components and hooks  
+- 🔀 React Router for page navigation  
+- 🎨 Custom CSS for styling and layout  
 
 ---
 
-## 🧠 Technical Highlights
-- **React 18, function components & Hooks**: `useState`, `useEffect`, `useMemo`, `useCallback`, `useRef`
-- **Routing (React Router)**: nested routes, dynamic params for `/:slug`, dedicated 404 page
-- **State management**: Context API for theme/UI; local
+## 🛠️ Technologies
+- **React**  
+- **React Router**  
+- **JavaScript (ES6+)**  
+- **CSS**  
+
+---
+
+# 📝 React Blog Sitesi
+
+Frontend geliştirme becerilerini uygulamak ve sergilemek için yapılmış bir **React tabanlı blog sitesi**.  
+Sayfalar arasında yönlendirme, gönderiler için state yönetimi ve farklı cihazlara uyumlu esnek bir tasarım içerir.  
+
+---
+
+## 🌐 Canlı Demo
+👉 [Demoyu görmek için buraya tıklayın](https://your-demo-link.com)  
+
+---
+
+## ✨ Özellikler
+- 📱 Masaüstü, tablet ve mobil için duyarlı tasarım  
+- 📰 Dinamik blog gönderi yapısı  
+- ⚡ React fonksiyonel bileşenler ve hook’lar ile geliştirilmiş  
+- 🔀 Sayfa geçişleri için React Router kullanılmış  
+- 🎨 Özelleştirilmiş CSS ile tasarım ve düzen  
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+- **React**  
+- **React Router**  
+- **JavaScript (ES6+)**  
+- **CSS**  
