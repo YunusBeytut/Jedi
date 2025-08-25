@@ -1,22 +1,22 @@
-# 📝 Blog Website
+# 📝 React Blog Website
 
-A responsive **blog website** built to practice and showcase frontend development skills.  
-It provides a simple platform for publishing posts with a clean and modern layout.  
+A **React-based blog website** built to practice and showcase frontend development skills.  
+It provides a simple platform for publishing posts with a clean and responsive layout.  
 
 ---
 
 ## ✨ Features
 - 📱 Fully responsive design  
 - 📰 Blog-style layout with posts  
-- 🎨 Clean and minimal user interface  
-- ⚡ Lightweight and fast  
+- ⚡ Powered by React  
+- 🎨 Clean and minimal UI  
 
 ---
 
 ## 🛠️ Technologies
-- **HTML** – structure  
-- **CSS** – styling and responsive design  
-- **JavaScript** – interactivity  
+- **React** (Create React App or Vite, depending on setup)  
+- **CSS** for styling  
+- **JavaScript (ES6+)**  
 
 ---
 
