@@ -6,7 +6,7 @@ It includes routing between pages, state management for posts, and a responsive 
 ---
 
 ## 🌐 Live Demo
-👉 [Click here to view the demo](https://your-demo-link.com)  
+👉 [Click here to view the demo](https://blog-web-sitesi.netlify.app/)  
 
 ---
 
@@ -35,7 +35,7 @@ Sayfalar arasında yönlendirme, gönderiler için state yönetimi ve farklı ci
 ---
 
 ## 🌐 Canlı Demo
-👉 [Demoyu görmek için buraya tıklayın](https://your-demo-link.com)  
+👉 [Demoyu görmek için buraya tıklayın](https://blog-web-sitesi.netlify.app/)  
 
 ---
 
