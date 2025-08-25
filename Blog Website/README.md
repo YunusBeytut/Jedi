@@ -5,6 +5,11 @@ It provides a simple platform for publishing posts with a clean and responsive l
 
 ---
 
+## 🌐 Live Demo
+👉 [Click here to view the demo](https://your-demo-link.com)  
+
+---
+
 ## ✨ Features
 - 📱 Fully responsive design  
 - 📰 Blog-style layout with posts  
@@ -13,16 +18,20 @@ It provides a simple platform for publishing posts with a clean and responsive l
 
 ---
 
-## 🛠️ Technologies
-- **React** (Create React App or Vite, depending on setup)  
-- **CSS** for styling  
-- **JavaScript (ES6+)**  
+# 📝 React Blog Sitesi
+
+Frontend geliştirme becerilerini uygulamak ve sergilemek için yapılmış bir **React tabanlı blog sitesi**.  
+Gönderi yayınlamak için basit, temiz ve duyarlı bir arayüz sağlar.  
 
 ---
 
-## 🚀 Getting Started
+## 🌐 Canlı Demo
+👉 [Demoyu görmek için buraya tıklayın](https://your-demo-link.com)  
 
-### 1. Clone the Repository
-```sh
-git clone https://github.com/YunusBeytut/BlogSite.git
-cd BlogSite
+---
+
+## ✨ Özellikler
+- 📱 Tamamen duyarlı tasarım  
+- 📰 Blog tarzı gönderi düzeni  
+- ⚡ React ile geliştirilmiş  
+- 🎨 Temiz ve minimal arayüz  
